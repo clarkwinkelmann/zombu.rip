@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<div class="band js-header-band">
+	<section class="home js-header-section">
+		<h1 class="hidden">Zombu</h1>
+		<p>Vous n'avez jamais autant souffert de votre vie</p>
+		<p><a href="#download" class="big-btn">Télécharger le jeu</a></p>
+	</section>
+	<a href="#download" class="next"></a>
+</div>
+
+<div class="band">
+	<section id="download">
+		<h1>Télécharger</h1>
+		<div class="line">
+			<div class="col-50">
+				<h2>Windows</h2>
+				<p>Installeur pour Windows XP, 7, 8</p>
+				<p><a href="#" class="download-btn windows">Télécharger</a></p>
+			</div><!--
+			--><div class="col-50">
+				<h2>Ubuntu</h2>
+				<p>Paquet pour Ubuntu 14.04</p>
+				<p><a href="#" class="download-btn ubuntu">Télécharger</a></p>
+			</div>
+		</div>
+	</section>
+</div>
+
+<div class="band">
+	<section>
+		<h1>Comment jouer ?</h1>
+		<p>Blablablabla</p>
+	</section>
+</div>
+
+<div class="band">
+	<section>
+		<h1>À propos</h1>
+		<p>Ce jeu ainsi que ce site ont été réalisés par <a href="http://clarkwinkelmann.com" target="_blank">Clark Winkelmann</a></p>
+		<p>J'ai réalisé le jeu dans le cadre d'un atelier de programmation à l'<a href="http://cpp.ch" target="blank">École des Métiers Techniques de Porrentruy</a> entre février et mars 2014</p>
+		<p>Le site ainsi que les paquets non-windows ont été réalisés pour <a href="http://www.bugnplay.ch" target="_blank" class="link-bugnplay">bugnplay.ch</a></p>
+	</section>
+</div>
+
+<script type="text/javascript">
+	(function() {
+        function resizeHeader() {
+            var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+            document.querySelector('.js-header-band').style.minHeight = height + 'px';
+            var $section = document.querySelector('.js-header-section');
+            $section.style.marginTop = (height-$section.offsetHeight)/2 + 'px';
+        }
+
+        window.addEventListener('resize', resizeHeader, true);
+
+        // Init
+        resizeHeader();
+    })();
+</script>

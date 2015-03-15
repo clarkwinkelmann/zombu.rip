@@ -1,0 +1,8 @@
+# dirs
+nbproject/private
+_site
+.sass-cache
+
+# files
+*~
+

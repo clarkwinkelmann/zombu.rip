@@ -1,0 +1,10 @@
+# Site settings
+title: Zombu
+author: Clark Winkelmann
+description: Jouez au terrible jeu du Zombu !
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://zombu.rip" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+exclude: [nbproject]
