@@ -7,4 +7,6 @@ url: "http://zombu.rip" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-exclude: [nbproject]
+exclude:
+  - nbproject
+  - README.md
