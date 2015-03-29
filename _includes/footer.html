@@ -1,15 +1,21 @@
-<div class="band">
-	<footer>&copy; {{ site.author }} {{ "now" | date: "%Y" }}</footer>
-</div>
+<footer>
+	<div class="content">&copy; {{ site.author }} {{ "now" | date: "%Y" }}</div>
+</footer>
 
 <script type="text/javascript">
 	// Dynamic header height
 	(function() {
+		var $section = document.querySelector('.js-header-section');
+		var $content = document.querySelector('.js-header-content');
+
+		if($section == null || $content == null) {
+			return;
+		}
+
 		function resizeHeader() {
 			var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-			document.querySelector('.js-header-band').style.minHeight = height + 'px';
-			var $section = document.querySelector('.js-header-section');
-			$section.style.marginTop = (height-$section.offsetHeight)/2 + 'px';
+			$section.style.minHeight = height + 'px';
+			$content.style.marginTop = (height-$content.offsetHeight)/2 + 'px';
 		}
 
 		window.addEventListener('resize', resizeHeader, true);

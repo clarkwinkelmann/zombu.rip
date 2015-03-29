@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="band js-header-band">
+<section class="js-header-section">
 	<div class="game-scene">
 		<div class="game-player"></div>
 		<div class="game-zombie first"></div>
@@ -14,16 +14,16 @@ layout: default
 		<div class="game-wall first"></div>
 		<div class="game-wall second"></div>
 	</div>
-	<section class="home js-header-section">
+	<div class="content home js-header-content">
 		<h1 class="hidden">Zombu</h1>
 		<p>Vous n'avez jamais autant souffert de votre vie</p>
 		<p><a href="#download" class="big-btn">Télécharger le jeu</a></p>
-	</section>
+	</div>
 	<a href="#download" class="next"></a>
-</div>
+</section>
 
-<div class="band">
-	<section id="download">
+<section id="download">
+	<div class="content">
 		<h1>Télécharger</h1>
 		<div class="line">
 			<div class="col-50">
@@ -38,11 +38,11 @@ layout: default
 			</div>
 		</div>
 		<p>Vous pouvez également compiler le jeu à partir des <a href="{{ site.links.repo }}">sources (sur GitHub)</a></p>
-	</section>
-</div>
+	</div>
+</section>
 
-<div class="band">
-	<section>
+<section>
+	<div class="content">
 		<h1>Comment jouer ?</h1>
 		<div class="line">
 			<div class="col-50">
@@ -65,14 +65,14 @@ layout: default
 				</ul>
 			</div>
 		</div>
-	</section>
-</div>
+	</div>
+</section>
 
-<div class="band">
-	<section>
+<section>
+	<div class="content">
 		<h1>À propos</h1>
 		<p>Ce jeu ainsi que ce site ont été réalisés par <a href="{{ site.links.refs.clarkwinkelmann }}" target="_blank">Clark Winkelmann</a></p>
 		<p>J'ai réalisé le jeu dans le cadre d'un atelier de programmation à l'<a href="{{ site.links.refs.cpp }}" target="blank">École des Métiers Techniques de Porrentruy</a> entre février et mars 2014</p>
 		<p>Le site ainsi que les paquets non-windows ont été réalisés pour <a href="{{ site.links.refs.bugnplay }}" target="_blank" class="link-bugnplay">bugnplay.ch</a> en mars 2015</p>
-	</section>
-</div>
+	</div>
+</section>
