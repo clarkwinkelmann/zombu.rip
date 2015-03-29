@@ -22,3 +22,4 @@ markdown: kramdown
 exclude:
   - nbproject
   - README.md
+  - LICENSE
