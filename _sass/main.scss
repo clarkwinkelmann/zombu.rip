@@ -12,6 +12,14 @@ $color-text-link: #888;
 $color-background-light: white;
 $color-background-dark: black;
 
+$site-width: 960px;
+$site-mobile-width: 800px;
+$site-very-small-width: 550px;
+
+* {
+	box-sizing: border-box;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	margin: 0;
@@ -33,7 +41,8 @@ p {
 }
 
 .content {
-	width: 960px;
+	width: $site-width;
+	max-width: 100%;
 	padding: 50px 20px;
 	margin: 0 auto;
 	min-height: 400px;
@@ -77,6 +86,11 @@ p {
 			display: inline-block;
 			vertical-align: top;
 			width: 50%;
+
+			@media (max-width: $site-mobile-width) {
+				display: block;
+				width: auto;
+			}
 		}
 	}
 
@@ -199,6 +213,10 @@ footer {
 			top: 20%;
 			left: 45%;
 			transform: rotate(-130deg);
+			
+			@media (max-width: $site-mobile-width) {
+				display: none;
+			}
 		}
 
 		&.third {
@@ -228,6 +246,17 @@ footer {
 			top: 20%;
 			right: 15%;
 		}
+
+		@media (max-width: $site-mobile-width) {
+			&.first,
+			&.second {
+				display: none;
+			}
+		}
+
+		@media (max-width: $site-very-small-width) {
+			display: none;
+		}
 	}
 
 	.game-wall {
@@ -244,6 +273,10 @@ footer {
 		&.second {
 			bottom: 10%;
 			right: 10%;
+		}
+
+		@media (max-width: $site-very-small-width) {
+			display: none;
 		}
 	}
 }
@@ -275,6 +308,14 @@ footer {
 
 .book-preview {
 	display: block;
+	max-width: 100%;
 	margin: 0 auto;
 	box-shadow: 0 0 5px rgba(black, 0.2);
+}
+
+.quick-instructions {
+	&, ul {
+		padding: 0 20px;
+		list-style: none;
+	}
 }
