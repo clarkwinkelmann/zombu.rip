@@ -1,0 +1,82 @@
+---
+layout: default
+permalink: en/
+---
+
+<section class="js-header-section">
+	<div class="game-scene">
+		<div class="game-player"></div>
+		<div class="game-zombie first"></div>
+		<div class="game-zombie second"></div>
+		<div class="game-zombie third"></div>
+		<div class="game-box first"></div>
+		<div class="game-box second"></div>
+		<div class="game-box third"></div>
+		<div class="game-wall first"></div>
+		<div class="game-wall second"></div>
+	</div>
+	<div class="content home js-header-content">
+		<h1 class="hidden">Zombu</h1>
+		<p>You've never suffered so much in your life</p>
+		<p><a href="#download" class="big-btn">Download the game</a></p>
+	</div>
+	<a href="#download" class="next"></a>
+</section>
+
+<section id="download">
+	<div class="content">
+		<h1>Download</h1>
+		<div class="line">
+			<div class="col-50">
+				<h2>Windows</h2>
+				<p>Setup for Windows XP, 7, 8</p>
+				<p><a href="{{ site.links.download.windows }}" class="download-btn windows">Download</a></p>
+			</div><!--
+			--><div class="col-50">
+				<h2>Ubuntu</h2>
+				<p>(coming soon)</p>
+				<p><a href="#" class="download-btn ubuntu">Download</a></p>
+			</div>
+		</div>
+		<p>You can also directly grab the <a href="{{ site.links.repo.game }}" target="_blank">source code (on GitHub)</a></p>
+	</div>
+</section>
+
+<section>
+	<div class="content">
+		<h1>How to play ?</h1>
+		<div class="line">
+			<div class="col-50">
+				<h2>The Guide (PDF, french)</h2>
+				<p><a href="{{ site.links.guide.fr }}"><img src="/img/guide_preview.png" alt="Donwload PDF" class="book-preview"></a></p>
+				<p><a href="{{ site.links.guide.fr }}">(click to open)</a></p>
+			</div><!--
+			--><div class="col-50">
+				<h2>Quick intro for Ninja</h2>
+				<ul>
+					<li>Controls<ul>
+						<li>Use the arrows keys to move around and SPACE to shoot</li>
+						<li>R, V and L keys respectively allow to restart the round, start next round and start next level</li>
+					</ul></li>
+					<li>Goals<ul>
+						<li>Stay alive</li>
+						<li>Kill all zombies</li>
+						<li>Find mystery words to unlock ameliorations</li>
+					</ul></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="content">
+		<h1>About</h1>
+		<p>This game, including graphics and this website were created by <a href="{{ site.links.refs.clarkwinkelmann }}" target="_blank">Clark Winkelmann</a></p>
+		<p>I created the game during a programming workshop at the <a href="{{ site.links.refs.cpp }}" target="blank">École des Métiers Techniques de Porrentruy</a> between february and march 2014</p>
+		<p>The website and the non-windows packages were created for <a href="{{ site.links.refs.bugnplay }}" target="_blank" class="link-bugnplay">bugnplay.ch</a> in march 2015</p>
+		<h2>License</h2>
+		<p>The game and the graphics are licensed under the <a href="{{ site.links.license.game }}" target="_blank">GNU LGPL</a>. Sources are available at <a href="{{ site.links.repo.game }}" target="blank">GitHub</a></p>
+		<p>Website source code is available under the <a href="{{ site.links.license.website }}" target="_blank">MIT License</a> at <a href="{{ site.links.repo.website }}" target="blank">GitHub</a></p>
+	</div>
+</section>
