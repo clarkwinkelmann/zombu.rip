@@ -5,6 +5,18 @@ description: Jouez au terrible jeu du Zombu !
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://zombu.rip" # the base hostname & protocol for your site
 
+# Links settings
+links:
+    repo: https://github.com/clarkwinkelmann/zombu
+    download:
+        windows: https://github.com/clarkwinkelmann/zombu/releases/download/v1.0/Zombu_Setup_Windows.exe
+    guide:
+        fr: https://github.com/clarkwinkelmann/zombu/releases/download/v1.0/Mode_demploi.pdf
+    refs:
+        clarkwinkelmann: http://clarkwinkelmann.com
+        cpp: http://cpp.ch
+        bugnplay: http://www.bugnplay.ch
+
 # Build settings
 markdown: kramdown
 exclude:
