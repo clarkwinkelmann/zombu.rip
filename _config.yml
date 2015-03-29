@@ -7,7 +7,9 @@ url: "http://zombu.rip" # the base hostname & protocol for your site
 
 # Links settings
 links:
-    repo: https://github.com/clarkwinkelmann/zombu
+    repo:
+        game: https://github.com/clarkwinkelmann/zombu
+        website: https://github.com/clarkwinkelmann/zombu.rip
     download:
         windows: https://github.com/clarkwinkelmann/zombu/releases/download/v1.0/Zombu_Setup_Windows.exe
     guide:
@@ -16,6 +18,9 @@ links:
         clarkwinkelmann: http://clarkwinkelmann.com
         cpp: http://cpp.ch
         bugnplay: http://www.bugnplay.ch
+    license:
+        game: https://github.com/clarkwinkelmann/zombu/blob/master/LICENSE.txt
+        website: https://github.com/clarkwinkelmann/zombu.rip/blob/master/LICENSE
 
 # Build settings
 markdown: kramdown
