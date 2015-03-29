@@ -76,19 +76,3 @@ layout: default
 		<p>Le site ainsi que les paquets non-windows ont été réalisés pour <a href="{{ site.links.refs.bugnplay }}" target="_blank" class="link-bugnplay">bugnplay.ch</a> en mars 2015</p>
 	</section>
 </div>
-
-<script type="text/javascript">
-	(function() {
-        function resizeHeader() {
-            var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-            document.querySelector('.js-header-band').style.minHeight = height + 'px';
-            var $section = document.querySelector('.js-header-section');
-            $section.style.marginTop = (height-$section.offsetHeight)/2 + 'px';
-        }
-
-        window.addEventListener('resize', resizeHeader, true);
-
-        // Init
-        resizeHeader();
-    })();
-</script>
