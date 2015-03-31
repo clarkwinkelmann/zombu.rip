@@ -21,6 +21,7 @@ links:
     license:
         game: https://github.com/clarkwinkelmann/zombu/blob/master/LICENSE.txt
         website: https://github.com/clarkwinkelmann/zombu.rip/blob/master/LICENSE
+    bugtracker: https://github.com/clarkwinkelmann/zombu/issues
 
 # Build settings
 markdown: kramdown
