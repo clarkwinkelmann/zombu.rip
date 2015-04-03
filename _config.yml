@@ -11,9 +11,10 @@ links:
         game: https://github.com/clarkwinkelmann/zombu
         website: https://github.com/clarkwinkelmann/zombu.rip
     download:
-        windows: https://github.com/clarkwinkelmann/zombu/releases/download/v1.0/Zombu_Setup_Windows.exe
+        windows: https://github.com/clarkwinkelmann/zombu/releases/download/v1.1/Zombu_Setup_Windows.exe
     guide:
-        fr: https://github.com/clarkwinkelmann/zombu/releases/download/v1.0/Mode_demploi.pdf
+        fr: https://github.com/clarkwinkelmann/zombu/releases/download/v1.1/Mode_demploi.pdf
+        en: https://github.com/clarkwinkelmann/zombu/releases/download/v1.1/User_Guide.pdf
     refs:
         clarkwinkelmann: http://clarkwinkelmann.com
         cpp: http://cpp.ch
