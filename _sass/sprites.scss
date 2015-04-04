@@ -19,7 +19,9 @@ $bugnplay-logo:   url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w
 //
 // From the Google Material Design Icons set
 // Includes color changes to fit the design
+// Color is decomposed in rgb to prevent breaking the encoded svg
 // @url https://github.com/google/material-design-icons
 // @license CC BY 4.0
 //
-$icon-down:       url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2044%22%3E%3Cpath%20d%3D%22M14.83%2016.42L24%2025.59l9.17-9.17L36%2019.25l-12%2012-12-12z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E");
+@mixin icon-down($color)     { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2044%22%3E%3Cpath%20d%3D%22M14.83%2016.42L24%2025.59l9.17-9.17L36%2019.25l-12%2012-12-12z%22%20fill%3D%22rgb(" + red($color) + "," + green($color) + "," + blue($color) + ")%22%2F%3E%3C%2Fsvg%3E"); }
+@mixin icon-download($color) { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%3E%3Cpath%20d%3D%22M38%2018h-8V6H18v12h-8l14%2014%2014-14zM10%2036v4h28v-4H10z%22%20fill%3D%22rgb(" + red($color) + "," + green($color) + "," + blue($color) + ")%22%2F%3E%3C%2Fsvg%3E"); }

@@ -1,3 +1,4 @@
+/* Zombu.rip CSS - See license at https://github.com/clarkwinkelmann/zombu.rip */
 
 @import "sprites";
 
@@ -109,15 +110,31 @@ p {
 
 	.download-btn {
 		display: inline-block;
-		padding: 1em 2em;
-		border: 2px solid;
+		padding: 0.8em 2em;
+		border: 2px solid $color-zombu-blue;
 		color: $color-zombu-blue;
 		font-size: 1.5em;
 		text-decoration: none;
 
+		&::before {
+			@include icon-download($color-zombu-blue);
+
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			width: 1.8em;
+			height: 1.5em;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
 		&:hover {
 			background: $color-zombu-blue;
 			color: $color-text-light;
+
+			&::before {
+				@include icon-download($color-text-light);
+			}
 		}
 	}
 }
@@ -282,6 +299,8 @@ footer {
 }
 
 .next {
+	@include icon-down($color-text-light);
+
 	position: absolute;
 	left: 50%;
 	bottom: 0;
@@ -289,7 +308,6 @@ footer {
 	height: 1em;
 	margin-left: -0.5em;
 	font-size: 100px;
-	background-image: $icon-down;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
