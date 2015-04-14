@@ -12,6 +12,7 @@ links:
         website: https://github.com/clarkwinkelmann/zombu.rip
     download:
         windows: https://github.com/clarkwinkelmann/zombu/releases/download/v1.1/Zombu_Setup_Windows.exe
+        linux:   https://github.com/clarkwinkelmann/zombu/releases/download/v1.1/Zombu_Linux_64bit.tar.gz
     guide:
         fr: https://github.com/clarkwinkelmann/zombu/releases/download/v1.1/Mode_demploi.pdf
         en: https://github.com/clarkwinkelmann/zombu/releases/download/v1.1/User_Guide.pdf
