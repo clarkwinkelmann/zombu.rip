@@ -3,7 +3,7 @@ title: Zombu
 author: Clark Winkelmann
 description: Jouez au terrible jeu du Zombu !
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://zombu.rip" # the base hostname & protocol for your site
+url: "https://zombu.rip" # the base hostname & protocol for your site
 
 # Links settings
 links:
@@ -17,8 +17,8 @@ links:
         fr: https://github.com/clarkwinkelmann/zombu/releases/download/v1.1/Mode_demploi.pdf
         en: https://github.com/clarkwinkelmann/zombu/releases/download/v1.1/User_Guide.pdf
     refs:
-        clarkwinkelmann: http://clarkwinkelmann.com
-        cpp: http://cpp.ch
+        clarkwinkelmann: https://clarkwinkelmann.com
+        cpp: https://www.divtec.ch/
         bugnplay: http://www.bugnplay.ch
     license:
         game: https://github.com/clarkwinkelmann/zombu/blob/master/LICENSE.txt
